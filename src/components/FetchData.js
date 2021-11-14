@@ -1,24 +1,23 @@
-import TableRow from './TableRow'
 import { nanoid } from 'nanoid'
 
-async function FetchData(street, setData) {
-    const BASE_URL = `https://search.pascopa.com/default.aspx?mprs=2&src=Q&pid=add&key=LOD&add2=${street}&add=Submit&sf=3&so=1&recs=1000`
+async function FetchData(searchTerm, data, setData) {
+    const BASE_URL = `https://search.pascopa.com/default.aspx?mprs=2&src=Q&pid=add&key=LOD&add2=${searchTerm}&add=Submit&sf=3&so=1&recs=1000`
     const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(BASE_URL)}`)
-    const data = await response.json()
+    const resData = await response.json()
     const parser = new DOMParser()
-    const doc = parser.parseFromString(data.contents, "text/html")
+    const doc = parser.parseFromString(resData.contents, "text/html")
     const allRows = doc.querySelectorAll('.datarow')
-    const dataObject = []
     allRows.forEach(row => {
         const rowData = row.querySelectorAll('td')
-        const homeLink = rowData[1].querySelector('a').href
-        console.log(homeLink)
-        const homeOwner = rowData[2].innerText
-        const homeAddress = rowData[3].innerText
-        dataObject.push([homeOwner, homeAddress, homeLink])
+        const dataObject = {
+            id: nanoid(),
+            mapLink: rowData[0].querySelector('a').href,
+            parcelLink: rowData[1].querySelector('a').href,
+            owner: rowData[2].textContent,
+            address: rowData[3].textContent,
+        }
+        setData(originalData => [...originalData, dataObject])
     })
-    setData(dataObject)
-    console.log("FETCH COMPLETE")
 }
 
 export default FetchData

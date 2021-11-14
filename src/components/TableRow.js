@@ -3,8 +3,7 @@ function TableRow({ count, name, address, link }) {
         <tr>
             <td data-label="Count">{count}</td>
             <td data-label="Name">{name}</td>
-            <td data-label="Address">{address}</td>
-            {/* <td data-label="Link">{link}</td> */}
+            <td data-label="Address"><a href={link} target={"_blank"} rel={"noreferrer"}>{address}</a></td>
         </tr>
     )
 }
