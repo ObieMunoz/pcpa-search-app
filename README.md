@@ -5,8 +5,7 @@ After I found myself visiting the Pasco County (Florida) Property Appraiser webs
 This unofficial project is NOT affiliated with the Pasco County Government, Pasco County Property Appraiser, or any other entity.
 
 A Link to the official PCPA search site is here: <a href="https://search.pascopa.com/">Pasco County Property Appraiser</a>
+### All information displayed through this page is public record and openly available at the Pasco County Property Appraiser. I have no control over the removal of any content.
 
 ## Screenshots
 ![pcpa-search-redacted-example](https://github.com/ObieMunoz/pcpa-search-app/blob/main/src/images/example-redacted-search.png?raw=true)
-
-### All information displayed through this page is public record and openly available at the Pasco County Property Appraiser. I have no control over the removal of any content.
