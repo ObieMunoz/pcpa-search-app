@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/pcpa-search-app/static/css/main.65ff86cf.chunk.css",
-    "main.js": "/pcpa-search-app/static/js/main.31dd6a5c.chunk.js",
-    "main.js.map": "/pcpa-search-app/static/js/main.31dd6a5c.chunk.js.map",
+    "main.js": "/pcpa-search-app/static/js/main.14408b37.chunk.js",
+    "main.js.map": "/pcpa-search-app/static/js/main.14408b37.chunk.js.map",
     "runtime-main.js": "/pcpa-search-app/static/js/runtime-main.1003d291.js",
     "runtime-main.js.map": "/pcpa-search-app/static/js/runtime-main.1003d291.js.map",
     "static/css/2.9d87dbe7.chunk.css": "/pcpa-search-app/static/css/2.9d87dbe7.chunk.css",
-    "static/js/2.3716bf76.chunk.js": "/pcpa-search-app/static/js/2.3716bf76.chunk.js",
-    "static/js/2.3716bf76.chunk.js.map": "/pcpa-search-app/static/js/2.3716bf76.chunk.js.map",
+    "static/js/2.a01e6082.chunk.js": "/pcpa-search-app/static/js/2.a01e6082.chunk.js",
+    "static/js/2.a01e6082.chunk.js.map": "/pcpa-search-app/static/js/2.a01e6082.chunk.js.map",
     "index.html": "/pcpa-search-app/index.html",
     "static/css/2.9d87dbe7.chunk.css.map": "/pcpa-search-app/static/css/2.9d87dbe7.chunk.css.map",
     "static/css/main.65ff86cf.chunk.css.map": "/pcpa-search-app/static/css/main.65ff86cf.chunk.css.map",
-    "static/js/2.3716bf76.chunk.js.LICENSE.txt": "/pcpa-search-app/static/js/2.3716bf76.chunk.js.LICENSE.txt",
+    "static/js/2.a01e6082.chunk.js.LICENSE.txt": "/pcpa-search-app/static/js/2.a01e6082.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/pcpa-search-app/static/media/outline-icons.ddae9b1b.woff",
     "static/media/logo.ea2310b1.png": "/pcpa-search-app/static/media/logo.ea2310b1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1003d291.js",
     "static/css/2.9d87dbe7.chunk.css",
-    "static/js/2.3716bf76.chunk.js",
+    "static/js/2.a01e6082.chunk.js",
     "static/css/main.65ff86cf.chunk.css",
-    "static/js/main.31dd6a5c.chunk.js"
+    "static/js/main.14408b37.chunk.js"
   ]
 }
