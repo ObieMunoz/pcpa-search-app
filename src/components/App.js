@@ -18,12 +18,18 @@ function App() {
     })
   }
 
+  function handleReset() {
+    console.log("reset")
+    setStreets(streets => [])
+    setData(data => [])
+  }
+
   return (
     <div className="App">
       <Header />
-      <SearchForm handleSearch={handleSearch} setStreets={setStreets} />
+      <SearchForm handleSearch={handleSearch} setStreets={setStreets} handleReset={handleReset} />
       <StreetList streets={streets} />
-      <TableContainer setData={setData} data={data} />
+      {data.length > 0 ? <TableContainer setData={setData} data={data} /> : null}
     </div>
   );
 }
