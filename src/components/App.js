@@ -12,7 +12,10 @@ function App() {
   function handleSearch(e) {
     e.preventDefault();
     if (streets.length === 0) return;
-    streets.map(street => FetchData(street, setData))
+    streets.map(street => {
+      FetchData(street, setData)
+      return setStreets(streets => streets.filter(street => street !== street))
+    })
   }
 
   return (
