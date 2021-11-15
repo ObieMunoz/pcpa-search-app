@@ -9,6 +9,7 @@ function SearchForm({ handleSearch, setStreets, handleReset }) {
 
     function addToSearch(e) {
         setStreets(streets => [...streets, searchTerm]);
+        setSearchTerm('');
     }
 
     return (
@@ -19,7 +20,7 @@ function SearchForm({ handleSearch, setStreets, handleReset }) {
                 </div>
                 <button className="ui primary button" type="button" onClick={e => addToSearch(e)}>Add to Street List</button>
                 <button className="ui primary button" type="submit" onClick={e => handleSearch(e)}>Search</button>
-                <button className="ui primary button" type="button" onClick={() => handleReset()}>Reset</button>
+                <button className="ui primary button" type="button" onClick={() => handleReset()}>Reset</button><br />
             </form>
         </div>
     )

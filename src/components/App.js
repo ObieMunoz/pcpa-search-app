@@ -4,6 +4,7 @@ import FetchData from './FetchData';
 import SearchForm from './SearchForm';
 import Header from './Header';
 import StreetList from './StreetList';
+import Contact from './Contact';
 
 function App() {
   const [data, setData] = useState([])
@@ -30,6 +31,7 @@ function App() {
       <SearchForm handleSearch={handleSearch} setStreets={setStreets} handleReset={handleReset} />
       <StreetList streets={streets} />
       {data.length > 0 ? <TableContainer setData={setData} data={data} /> : null}
+      <Contact />
     </div>
   );
 }
