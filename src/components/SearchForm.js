@@ -1,10 +1,14 @@
 import { useState } from 'react';
 
-function SearchForm({ handleSearch }) {
+function SearchForm({ handleSearch, setStreets }) {
     const [searchTerm, setSearchTerm] = useState('');
 
     function handleChange(e) {
         setSearchTerm(e.target.value);
+    }
+
+    function addToSearch(e) {
+        setStreets(streets => [...streets, searchTerm]);
     }
 
     return (
@@ -13,7 +17,8 @@ function SearchForm({ handleSearch }) {
                 <div className="ui input">
                     <input type="text" name="street-name" placeholder="Street Name" onChange={e => handleChange(e)} value={searchTerm} />
                 </div>
-                <button className="ui button" type="submit" onClick={e => handleSearch(e, searchTerm)}>Search</button>
+                <button className="ui primary button" type="button" onClick={e => addToSearch(e)}>Add to Street List</button>
+                <button className="ui primary button" type="submit" onClick={e => handleSearch(e)}>Search</button>
             </form>
         </div>
     )
